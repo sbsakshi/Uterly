@@ -205,7 +205,7 @@ export default function DoctorDetailPage() {
                   {availableSlots.map((time) => (
                     <button
                       key={time}
-                      className={`appointment-slot ${selectedTime === time ? "selected" : ""}`}
+                      className={`px-3 py-1 rounded-md text-sm font-medium cursor-pointer transition-all ${selectedTime === time ? "selected" : ""}`}
                       onClick={() => setSelectedTime(time)}
                     >
                       {time}

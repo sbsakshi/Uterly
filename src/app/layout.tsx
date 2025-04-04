@@ -1,7 +1,7 @@
 import type React from "react"
 import "@/app/globals.css"
 import { ThemeProviderCustom } from "@/components/theme-provider-custom"
-import { ThemeProvider } from "../components/theme-provider-custom"
+import { ThemeProvider } from "../components/theme-provider"
 import { CyclePhase } from "@/types/cycle-phases"
 
 export default function RootLayout({

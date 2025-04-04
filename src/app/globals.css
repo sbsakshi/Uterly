@@ -57,10 +57,10 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-[hsl(var(--border))];
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
   }
 }
 
@@ -69,13 +69,8 @@
   color: white;
 }
 
-.sidebar-icon {
-  @apply flex items-center justify-center w-12 h-12 text-white hover:bg-white/20 rounded-lg transition-all;
-}
 
-.mood-card {
-  @apply flex flex-col items-center justify-center p-4 rounded-lg border cursor-pointer transition-all;
-}
+
 
 .mood-card.active {
   background-color: var(--color-lighter);
@@ -83,9 +78,7 @@
   color: var(--color-text);
 }
 
-.flow-card {
-  @apply flex flex-col items-center justify-center p-4 rounded-lg border cursor-pointer transition-all;
-}
+
 
 .flow-card.active {
   background-color: var(--color-lighter);
@@ -93,9 +86,7 @@
   color: var(--color-text);
 }
 
-.resource-card {
-  @apply p-3 rounded-lg border hover:shadow-md transition-all cursor-pointer;
-}
+
 
 .cycle-progress {
   position: relative;
@@ -118,7 +109,6 @@
 }
 
 .doctor-card {
-  @apply p-4 rounded-lg border hover:shadow-md transition-all cursor-pointer;
   background-color: white;
   border-color: var(--color-lighter);
 }
@@ -128,7 +118,6 @@
 }
 
 .appointment-slot {
-  @apply px-3 py-1 rounded-md text-sm font-medium cursor-pointer transition-all;
   background-color: var(--color-lighter);
   color: var(--color-text);
 }
@@ -140,7 +129,6 @@
 }
 
 .btn-primary {
-  @apply px-4 py-2 rounded-md font-medium text-white transition-all;
   background-color: var(--color-darker);
 }
 
@@ -149,7 +137,6 @@
 }
 
 .btn-outline {
-  @apply px-4 py-2 rounded-md font-medium transition-all;
   background-color: transparent;
   border: 1px solid var(--color-darker);
   color: var(--color-darker);
@@ -159,8 +146,7 @@
   background-color: var(--color-lighter);
 }
 
-.health-insight-card {
-  @apply p-4 rounded-lg;
+/* .health-insight-card {
   background-color: var(--color-lighter);
-}
+} */
 

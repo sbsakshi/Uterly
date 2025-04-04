@@ -32,6 +32,8 @@ export function ThemeProviderCustom({ children, defaultPhase = CyclePhase.MENSTR
     root.style.setProperty("--color-background", cycleThemes[phase].colors.background)
     root.style.setProperty("--color-text", cycleThemes[phase].colors.text)
     root.style.setProperty("--color-accent", cycleThemes[phase].colors.accent)
+    root.style.setProperty("--color-border", cycleThemes[phase].colors.border)
+
   }, [phase])
 
   return <ThemeContext.Provider value={{ phase, setPhase, colors }}>{children}</ThemeContext.Provider>

@@ -130,7 +130,7 @@ export default function Dashboard() {
                   <button className="text-sm text-[var(--color-darker)]">See More</button>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  <div className="resource-card">
+                  <div className="p-3  border hover:shadow-md transition-all cursor-pointer">
                     <Image
                       src="/placeholder.svg?height=100&width=100"
                       alt="Luteal Phase"
@@ -140,7 +140,7 @@ export default function Dashboard() {
                     />
                     <p className="text-xs text-center">Luteal Phase</p>
                   </div>
-                  <div className="resource-card">
+                  <div className="p-3  border hover:shadow-md transition-all cursor-pointer">
                     <Image
                       src="/placeholder.svg?height=100&width=100"
                       alt="Nourish Your Body"
@@ -150,7 +150,7 @@ export default function Dashboard() {
                     />
                     <p className="text-xs text-center">Nourish Your Body</p>
                   </div>
-                  <div className="resource-card">
+                  <div className="p-3  border hover:shadow-md transition-all cursor-pointer">
                     <Image
                       src="/placeholder.svg?height=100&width=100"
                       alt="Chance of Pregnancy"
@@ -160,7 +160,7 @@ export default function Dashboard() {
                     />
                     <p className="text-xs text-center">Chance of Pregnancy</p>
                   </div>
-                  <div className="resource-card">
+                  <div className="p-3  border hover:shadow-md transition-all cursor-pointer">
                     <Image
                       src="/placeholder.svg?height=100&width=100"
                       alt="Chance of Pregnancy"

@@ -11,6 +11,7 @@ export enum CyclePhase {
     background: string
     text: string
     accent: string
+    border: string
   }
   
   export interface CycleTheme {
@@ -27,6 +28,7 @@ export enum CyclePhase {
         background: "#FFF1F3",
         text: "#9F1239",
         accent: "#FB7185",
+        border: "#FBBF24",
       },
     },
     [CyclePhase.FOLLICULAR]: {
@@ -37,6 +39,7 @@ export enum CyclePhase {
         background: "#FFFDF0",
         text: "#854D0E",
         accent: "#FDE047",
+        border: "#FBBF24",
       },
     },
     [CyclePhase.OVULATION]: {
@@ -47,6 +50,7 @@ export enum CyclePhase {
         background: "#F0F9FF",
         text: "#075985",
         accent: "#38BDF8",
+        border: "#0EA5E9",
       },
     },
     [CyclePhase.LUTEAL]: {
@@ -57,6 +61,7 @@ export enum CyclePhase {
         background: "#F0FDF4",
         text: "#166534",
         accent: "#86EFAC",
+        border: "#22C55E",
       },
     },
   }
